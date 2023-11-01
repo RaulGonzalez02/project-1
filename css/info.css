@@ -1,0 +1,58 @@
+/* Seccion de articulos */
+.section__articles{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    padding-bottom: 35px;
+    border-bottom: #D5DBDB 3px groove;
+}
+.section__article{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:center;
+}
+/* Partes del articulo */
+.article__titulo{
+    text-align: center;
+    width: 100%;
+    border-bottom: 3px groove #D5DBDB;;
+}
+.article__image{
+    width: 95%;
+}
+.article__img{
+    display: flex;
+    width: 100%;
+}
+.article__text{
+    font-variant: normal;
+}
+.article__link{
+    display: flex;
+    text-decoration: none;
+    color: #D5DBDB;
+    font-size: 1.25rem;
+    padding: 5px;
+    border: #D5DBDB 1px solid;
+    border-radius: 3%;
+}
+.article__link:hover{
+    color: #616a6b;
+    border:1px solid #616a6b;
+}
+/* Section con tarjetas */
+.section__cards{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.section__card{
+    width: 45%;
+    padding: 5px;
+    border: #D5DBDB 3px groove;
+}
+.section__youtube{
+    width: 100%;
+}

@@ -1,0 +1,59 @@
+.container{
+    width: 1080px;
+    background-color: #292929a4;
+    color: #D5DBDB;
+    font-family: lucotecia;
+    font-variant: small-caps;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.titulo{
+    text-align: center;
+    font-family: never;
+    font-size: 3.5rem;
+    border: 2px groove #D5DBDB;
+    border-radius: 3px;
+}
+/* Subcontainer con logo y boton de acceso */
+.subcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+.logo{
+    border-right: #D5DBDB groove 3px;
+    padding-right: 20px;
+}
+.logo__img{
+    display: flex;
+    width: 450px;
+}
+/* Boton de acceso */
+.boton__link{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    text-decoration: none;
+    color: #D5DBDB;
+    font-size: 2rem;
+    border: 3px groove #D5DBDB;
+    padding: 10px;
+    box-shadow: 10px 10px 200px 0px rgba(97,106,107,1);
+}
+.boton__img{
+    display: flex;
+    width: 100px;
+    margin-right: 7px;
+}
+.boton__link:hover{
+    color: #616a6b;
+    border: 3px groove #616a6b;
+    box-shadow: 10px 10px 150px 0px rgba(213,219,219,1);
+}
+/* Menu estatico solo en index */
+.menu{
+    position: relative;
+}

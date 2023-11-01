@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TANDAS KTP-LOGIN</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" href="../assets/images/Captura-E6B-8FHjJ-transformed (1).png" type="image/x-icon">
+</head>
+<body> 
+    <a href="" id="subir"></a>
+    <a href="#subir"><img src="../assets/images/circle-up-solid.svg" alt="" class="iconosubida"> </a>
+    </a>
+    <nav class="menu">
+        <div class="menu__logo">
+            <a href="../index.html" class="logo__img"><img src="../assets/images/Captura-E6B-8FHjJ-transformed (1).png" alt="" class="menu__logo--img"></a>
+        </div>
+        <div class="menu__text">
+            <ul class="menu__items">
+                <li class="menu__item"><a href="../pages/info.html" class="menu__link">Información</a></li>
+                <li class="menu__item"><a href="../pages/circuitointerior.html" class="menu__link">Circuito Interior</a></li>
+                <li class="menu__item"><a href="../pages/circuitoexterior.html" class="menu__link">Circuito Exterior</a></li>
+                <li class="menu__item"><a href="../pages/foodtruck.html" class="menu__link">FoodTruck</a></li>
+                <li class="menu__item"><a href="../pages/login.html" class="menu__link menu__link--diferente">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <form action="" class="form">
+            <div class="subcontainer">
+                <fieldset class="form__datos">
+                    <legend>Datos Personales</legend>
+                    <label for="nombre" class="form__label">Nombre
+                        <input name="nombre" type="text" class="form__imput" placeholder="Nombre"></label>
+                    <div class="form__inline">
+                        <label for="apellido1" class="form__label">
+                            Primer apellido
+                            <input name="apellido1" type="text" class="form__imput form__imput--inline" placeholder="Primer apellido">
+                        </label>
+                        <label for="apellido2" class="form__label">
+                            Segundo apellido
+                            <input type="text" class="form__imput form__imput--inline" name="apellido2" placeholder="Segundo apellido">
+                        </label>
+                    </div>
+                    <label for="tlf" class="form__label">
+                        Telefono
+                        <input type="text" class="form__imput" placeholder="Numero de telefono" name="tlf">
+                    </label>
+                    <label for="email" class="form__label">
+                        Email
+                        <input type="email" name="email" id="" class="form__imput" placeholder="example@example.com">
+                    </label>
+                    <div class="form__inline">
+                        <label for="poblacion" class="form__label">
+                            Poblacion
+                            <input type="text" class="form__imput" name="poblacion" placeholder="Poblacion">
+                        </label>
+                        <label for="provincia" class="form__label">
+                            Provincia
+                            <input type="text" class="form__imput" name="provincia" placeholder="Provincia">
+                        </label>
+                        <label for="cp" class="form__label">
+                            Codigo Postal
+                            <input type="text" name="cp" id="" class="form__imput" placeholder="45700">
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset class="form__opcions">
+                    <legend>Opciones</legend>
+                    <div class="form__inline ">
+                        <label for="c" class="form__label">
+                            Circuito Interior
+                            <input type="radio" name="c" id="" class="form__radio">
+                        </label>
+                        <label for="c" class="form__label">
+                            Circuito Exterior
+                            <input type="radio" name="c" id="" class="form__radio">
+                        </label>
+                    </div>
+                    <label for="circuito" class="form__label">Elija circuito<select name="circuito" id="" class="form__imput form__imput--select">
+                        <option value="" selected disabled>Elija una opcion</option>
+                        <optgroup label="Circuito Interior">
+                            <option value="4">Karts alquiler</option>
+                            <option value="5">PitBike alquiler</option>
+                            <option value="6">Karts propio</option>
+                            <option value="7">PitBike propio</option>
+                        </optgroup>
+                        <optgroup label="Circuito Exterior">
+                            <option value="1">Porsche 911 GT3 RS</option>
+                            <option value="2">Audi R8 V10 Plus</option>
+                            <option value="3">Vehiculo propio</option>
+                        </optgroup>
+                    </select></label>
+                    <label for="fecha" class="form__label">
+                        Fecha
+                        <input type="date" name="fecha" id="" class="form__imput form__imput--fecha" placeholder="dd/mm/aa">
+                    </label>
+
+                    <p class="form__text">IMPORTANTE: si la inscripcion que se esta haciendo es para entrar con vehiculo se tendra que saber que sera responsable de los daños ocasionados en caso de accidente, tambien
+                        tendra que tener en cuenta que sin uso de casco y sistemas de protecciones instalado en el vehiculo que se comprobaran en la entrada del circuito no se puede entrar.
+                    </p>
+                </fieldset>
+            </div>
+            <fieldset class="form__commets">
+                <legend>Observaciones</legend>
+                <label for="textarea" class="form__label">
+                    <textarea class="form__textarea" name="textarea" id="" cols="70" rows="10" placeholder="Escribanos si debemos saber algo en especial de usted o si quiere contarnos algo que nos ayude a mejorar"></textarea>
+                </label>
+                <label for="" class="form__label form__label--comment">
+                    <input type="checkbox" name="" id="" class="form__checkbox">
+                    Acepta los terminos puestos por la empresa de TANDAS KTP haciendo un uso responsable de todas las instalaciones y de sus vehiculos prestados al usuario.
+                </label>
+                <div class="form__buttons">
+                    <button class="form__button" type="submit"><a href="#subir" class="button__link">Enviar</a></button>
+                    <button class="form__button" type="reset"><a href="#subir" class="button__link">Limpiar</a></button>
+                </div>
+            </fieldset>
+        </form>
+        <div class="table">
+            <table class="table__items">
+                <tr class="table__columns">
+                    <th class="table__cell table__cell--titulo" colspan="2">Circuito Interior</th>
+                </tr>
+                <tr class="table__columns">
+                    <td class="table__cell">Karts Alquiler</td>
+                    <td class="table__cell">10min/9€</td>
+                </tr>
+                <tr class="table__columns">
+                    <td class="table__cell">Karts Propio</td>
+                    <td class="table__cell">Tanda 25min + 5min de entranamiento/45€</td>
+                </tr>
+                <tr class="table__columns">
+                    <td class="table__cell">PitBike Alquiler</td>
+                    <td class="table__cell">12min/16€</td>
+                </tr>
+                <tr class="table__columns">
+                    <td class="table__cell">PitBike Propia</td>
+                    <td class="table__cell">Tanda 25min + 5min de entranamiento/45€</td>
+                </tr>
+                <tr class="table__columns">
+                    <td class="table__cell">Karts grupal para 10 personas</td>
+                    <td class="table__cell">12 vueltas + 3 vueltas clasificacion + 5min de entrenamiento /25€ persona</td>
+                </tr>
+                <tr class="table__columns">
+                    <td class="table__cell">PitBike grupal para 12 personas</td>
+                    <td class="table__cell">12 vueltas + 3 vueltas clasificacion + 5min de entrenamiento /35€ persona</td>
+                </tr>
+
+            </table>
+            <table class="table__items">
+                <tr class="table__columns">
+                    <th class="table__cell table__cell--titulo" colspan="2">Circuito Exterior</th>
+                </tr>
+                <tr class="table__items">
+                    <td class="table__cell">Porsche 911 GT3 RS</td>
+                    <td class="table__cell">Pilotaje 3 vueltas/250€</td>
+                </tr>
+                <tr class="table__items">
+                    <td class="table__cell">Porsche 911 GT3 RS</td>
+                    <td class="table__cell">Piloto profesional 4 vueltas/100€</td>
+                </tr>
+                <tr class="table__items">
+                    <td class="table__cell">Audi R8 V10 Plus</td>
+                    <td class="table__cell">Pilotaje 3 vueltas/200€</td>
+                </tr>
+                <tr class="table__items">
+                    <td class="table__cell">Audi R8 V10 Plus</td>
+                    <td class="table__cell">Piloto profesional 4 vueltas/100€</td>
+                </tr>
+                <tr class="table__items">
+                    <td class="table__cell">Vehiculo propio</td>
+                    <td class="table__cell">Tanda de 4 vueltas + vuelta de reconomiento/90€ </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="container__map">
+                <iframe class="map__mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3053.9454811550245!2d-4.0112489491882295!3d40.054317579307856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd41e6406e6cd407%3A0x2086e2fcbd921fc!2sKarting%20Club%20Correcaminos!5e0!3m2!1ses!2ses!4v1676374642786!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="container__iconos">
+                <div class="iconos__icons"><a target="_blank" href="https://es-es.facebook.com/login/device-based/regular/login/?login_attempt=1" class="icons__links"><img src="../assets/images/icons8-facebook (1).svg" alt="" class="icons__img"></a></div>
+                <div class="iconos__icons"><a target="_blank" href="https://www.instagram.com/" class="icons__links"><img src="../assets/images/icons8-instagram.svg" alt="" class="icons__img"></a></div>
+                <div class="iconos__icons"><a target="_blank" href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D" class="icons__links"><img src="../assets/images/icons8-twitter (1).svg" alt="" class="icons__img"></a></div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

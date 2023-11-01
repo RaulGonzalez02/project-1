@@ -1,0 +1,113 @@
+/* Fuente slogan */
+@font-face {
+    font-family: never;
+    src: url(../assets/fonts/Never\ Brat.ttf);
+}
+/* Fuente menu y pie */
+@font-face {
+    font-family: sansburg;
+    src: url(../assets/fonts/Sansburg.ttf);
+}
+/* Fuente texto */
+@font-face {
+    font-family: lucotecia;
+    src: url(../assets/fonts/Lucotecia\ Light.ttf);
+}
+body{
+    background-image: url("../assets/images/black-paper-1920x1080.png");
+    font-family: lucotecia;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Menu todas paginas */
+.menu{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sansburg;
+    font-variant: small-caps;
+    background-color: #292929a4;
+    position: sticky;
+    top: 10px;
+}
+.menu__text{
+    width: 800px;
+}
+.menu__items{
+    display: flex;
+    justify-content: space-evenly;
+    margin-right:25px ;
+}
+.menu__item{
+    list-style: none;
+}
+.menu__link{
+    text-decoration: none;
+    color: #D5DBDB;
+    padding: 4px;
+}
+.menu__logo{
+    margin-left:40px ;
+}
+.menu__logo--img{
+    display: flex;
+    width: 150px;
+    padding: 5px;
+}
+.menu__link:hover{
+    outline: 1px solid #D5DBDB;
+    color: #616a6b;
+}
+.menu__link--diferente{
+    border-bottom: #D5DBDB 1px solid;
+}
+.menu__link--diferente:hover{
+    text-decoration: none;
+}
+/* Footer todas las paginas */
+.footer{
+    background-color: #292929a4;
+}
+.footer__container{
+    display: flex;
+    width: 1300px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+.container__map{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-right: 2px groove #D5DBDB;
+    padding: 15px 15px;
+    margin-right: 25px;
+}
+.map__mapa{
+    width: 300px;
+    height: 200px;
+}
+.container__iconos{
+    display: flex;
+    padding: 30px;
+}
+.iconos__icons{
+    margin-right: 10px;
+}
+/* flecha de subida */
+.iconosubida{
+    display: block;
+    width: 25px;
+    background-color: #D5DBDB;
+    border-radius:50% ;
+    position: fixed;
+    bottom: 5px;
+    right: 15px;
+}
+/* Titulo del main igual para todas las paginas */
+.main__titulo{
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 3px groove #D5DBDB;
+}
